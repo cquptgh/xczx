@@ -1,0 +1,424 @@
+body {
+  background: #f3f5f7;
+}
+
+/* 确定版心 */
+.w {
+  width: 1200px;
+  margin: auto;
+}
+
+/* 解决高度塌陷和垂直外边距合并问题 */
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.header {
+  /* background: lightpink; */
+  margin: 30px auto;
+}
+
+.logo {
+  float: left;
+  height: 42px;
+}
+
+/* 导航栏 */
+.nav {
+  float: left;
+  margin: 0 70px;
+}
+
+.nav ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.nav ul li a {
+  display: block;
+  height: 42px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  line-height: 42px;
+  font-size: 18px;
+  color: #050505;
+}
+
+.nav ul li a:hover {
+  border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索框 */
+.search {
+  float: left;
+  width: 411px;
+  height: 42px;
+}
+
+.search input {
+  float: left;
+  box-sizing: border-box;
+  width: 361px;
+  height: 42px;
+  padding: 13px 19px;
+  border: 1px solid #00a4ff;
+  border-right: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.search button {
+  float: left;
+  width: 50px;
+  height: 42px;
+  border: none;
+  background: url('../images/search.png');
+}
+
+/* 用户登录状态 */
+.user {
+  float: right;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.user span {
+  margin-left: 6px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* banner模块 */
+.banner {
+  height: 420px;
+  background: #1c036c;
+}
+
+.banner .w {
+  position: relative;
+  background: url(../images/banner.png) no-repeat top center;
+}
+
+.subnav {
+  width: 190px;
+  background: rgba(19, 2, 75, 0.5);
+}
+
+.subnav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 420px;
+  padding: 0 20px;
+}
+
+.subnav ul li a {
+  font-size: 14px;
+  color: #fff;
+}
+
+.subnav ul li a span {
+  float: right;
+}
+
+.subnav ul li a:hover {
+  color: #00b4ff;
+}
+
+.my_course {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  width: 228px;
+  height: 300px;
+  background: #fff;
+}
+
+.my_course h2 {
+  height: 48px;
+  background: #9bceea;
+  font-size: 18px;
+  font-style: bold;
+  text-align: center;
+  line-height: 48px;
+  color: #fff;
+}
+
+.my_course .course_body {
+  padding: 12px 14px;
+}
+
+.my_course .course_body ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 228px;
+}
+
+.my_course .course_body ul li {
+  padding-bottom: 14px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.my_course .course_body ul li p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #a5a5a5;
+}
+
+.my_course .course_body ul a {
+  display: block;
+  box-sizing: border-box;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #00a4ff;
+  color: #00a4ff;
+  text-align: center;
+  line-height: 40px;
+}
+
+.pointnav {
+  position: absolute;
+  bottom: 34px;
+  left: 480px;
+  width: 168px;
+}
+
+.pointnav ul li a {
+  float: left;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: #64b6e6;
+  margin: 0 8px;
+}
+
+.pointnav ul li a:hover {
+  width: 20px;
+  height: 12px;
+  border-radius: 6px;
+  background: #fff;
+  margin: 0 4px;
+}
+
+/* 精品推荐导航栏 */
+.goods {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background: #fff;
+  margin-top: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.goods h3 {
+  margin-left: 34px;
+  font-size: 16px;
+  color: #00a4ff;
+  font-style: bold;
+}
+
+.goods ul {
+  display: flex;
+  margin-left: -170px;
+}
+
+.goods ul li {
+  box-sizing: border-box;
+  width: 122px;
+  border-left: 1px solid #bfbfbf;
+  padding-left: 36px;
+}
+
+.goods ul li a {
+  color: #000;
+}
+
+.goods .mod {
+  margin-right: 26px;
+  font-size: 14px;
+  color: #00a4ff;
+}
+
+/* 精品推荐模块 */
+
+.box .box_hd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 36px auto 20px auto;
+}
+
+.box .box_hd h3 {
+  font-size: 20px;
+  color: #494949;
+}
+
+.box .box_hd a {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+
+.box .box_bd ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+.normal_course {
+  position: relative;
+  width: 233px;
+  height: 272px;
+  margin-bottom: 14px;
+  background: #fff;
+}
+
+.normal_course a img {
+  width: 100%;
+}
+
+.normal_course h4 {
+  font-size: 14px;
+  margin: 24px;
+  line-height: 18px;
+}
+
+.normal_course p {
+  position: absolute;
+  bottom: 27px;
+  left: 22px;
+  font-size: 12px;
+  color: #999;
+}
+
+.normal_course p span {
+  color: #ff7c2d;
+}
+
+.normal_course .hot,
+.new {
+  position: absolute;
+  top: 4px;
+  right: -4px;
+}
+
+/* 编程入门模块 */
+/* 数据分析师模块 */
+
+.normal_hd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px auto 20px auto;
+}
+
+.normal_hd h3 {
+  font-size: 20px;
+  color: #494949;
+}
+
+.normal_hd ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.normal_hd ul li {
+  margin-right: 71px;
+}
+
+
+.normal_hd ul li a {
+  font-size: 16px;
+  color: #868686;
+}
+
+.normal_hd ul li h4 {
+  font-size: 16px;
+  color: #00a4ff;
+}
+
+.normal_hd a {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+
+.program_bd,
+.data_bd {
+  display: flex;
+}
+
+.program_bd .right,
+.data_bd .right {
+  width: 100%;
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.program_bd .right .bottom ul,
+.data_bd .right .bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  margin-top: 18px;
+}
+
+/* footer区域 */
+
+footer {
+  height: 316px;
+  margin-top: 40px;
+}
+
+footer .w {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 33px;
+}
+
+.copyright p {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #666;
+  line-height: 18px;
+}
+
+.copyright button {
+  box-sizing: border-box;
+  width: 120px;
+  height: 36px;
+  margin-top: 15px;
+  border: 1px solid #00a4ff;
+  color: #00a4ff;
+}
+
+.link {
+  display: flex;
+}
+
+.link .guide {
+  margin: 0 140px;
+}
+
+.link li {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #7d7d7d;
+}
+
+.link ul li {
+  margin-bottom: 9px;
+}
+
+.link ul li a {
+  font-size: 12px;
+  color: #000;
+}
